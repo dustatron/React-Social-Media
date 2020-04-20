@@ -2,7 +2,7 @@ import React from "react";
 
 function UserBio() {
   return (
-    <div className="card" style={{ width: "18rem" }}>
+    <div className="card bio" style={{ width: "18rem" }}>
       <div className="card-body">
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore

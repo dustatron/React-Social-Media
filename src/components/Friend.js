@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-function Friend() {
+function Friend(props) {
   return (
     <li className="list-group-item">
       <div className="row">
@@ -8,12 +9,11 @@ function Friend() {
           <img
             src="https://icons-for-free.com/iconfiles/png/512/instagram+person+profile+icon-1320184028516722357.png"
             alt="avatar"
-            // style={{ height: "85px" }}
           />
         </div>
         <div className="col-sm-10">
           <p id="friend-name" className="text-center">
-            FriendName
+            {props.name}
           </p>
           <button className="btn btn-primary btn-block"> Button </button>
         </div>
@@ -21,5 +21,9 @@ function Friend() {
     </li>
   );
 }
+
+Friend.propTypes = {
+  name: PropTypes.string.isRequired
+};
 
 export default Friend;

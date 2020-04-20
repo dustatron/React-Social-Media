@@ -1,5 +1,6 @@
 import React from "react";
 import Post from "./Post";
+import TestPosts from "./TestPosts";
 
 function UserFeed() {
   return (
@@ -15,12 +16,8 @@ function UserFeed() {
             <input className="form-control" type="text" placeholder="What's happening?" />
           </div>
         </li>
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
+
+        {TestPosts().map((post, index) => <Post title={post.title} body={post.body} key={index} />)}
       </ul>
     </React.Fragment>
   );

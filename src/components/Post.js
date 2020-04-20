@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-function Post() {
+function Post(props) {
   return (
     <li className="list-group-item">
       <div className="row">
@@ -12,15 +13,17 @@ function Post() {
           />
         </div>
         <div className="col-sm-10">
-          <h5> Lorem ipsum </h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
+          <h5> {props.title} </h5>
+          <p>{props.body}</p>
         </div>
       </div>
     </li>
   );
 }
+
+Post.propTypes = {
+  title: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired
+};
 
 export default Post;

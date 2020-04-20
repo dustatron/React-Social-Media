@@ -24,3 +24,14 @@ code {
 .images img {
   max-width: 4.5rem;
 }
+
+#friend-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bio {
+  margin-top: 35px;
+}
