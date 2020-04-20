@@ -1,0 +1,14 @@
+{
+  "coauthors": {
+    "dm": {
+      "name": "Dusty McCord",
+      "email": "Dusty@gmail.com"
+    },
+    "rs": {
+      "name": "Rachel Schieferstein",
+      "email": "violenza@gmail.com",
+    "mb": {
+      "name": "Miles Bradt",
+      "email": "smbradtmichael@gmail.com",
+  }
+}
